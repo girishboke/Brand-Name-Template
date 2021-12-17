@@ -1,0 +1,22 @@
+{
+  "name": "shoptimize-assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node-sass --watch scss -o css",
+    "dev": "vite && node-sass --watch scss -o css",
+    "build": "vite build && node-sass scss -o css",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "Girish Boke <girish.ivision@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap-icons": "^1.7.2",
+    "node-sass": "^7.0.0"
+  },
+  "devDependencies": {
+    "vite": "^2.7.2"
+  }
+}

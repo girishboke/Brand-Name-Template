@@ -1,0 +1,59 @@
+.top-bar{
+    .nav-item{
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+        &:not(:last-child){
+            .nav-link{
+                border-right: 1px solid $black;
+            }
+        }
+        .nav-link{
+            font-size: 0.75rem;
+            color: $black;
+            padding-top: 0;
+            padding-bottom: 0;
+        }        
+    }    
+}
+.navbar.navbar-light{
+    .nav-link.active,
+    .navbar-nav .show>.nav-link{
+        color: $primary;
+        font-weight: 600;
+    }
+    .navbar-toggler{
+        border-color: transparent;
+        padding: 0;
+        &:focus{
+            box-shadow: none;
+        }
+    }
+}
+.main-navbar{
+    .cart-counter{
+        top: 12px;        
+        right: -22px;
+        @media screen and (min-width: 992px) {
+            right: -15px;
+        }
+    }
+    .nav-actions{
+        .navbar-nav{
+            flex-direction: row;
+        }
+    }
+    .navbar-collapse{
+        background: $white;
+        width: 100%;
+        left: 0;
+    }
+}
+.hero-banner{
+    img{
+        height: 220px;
+        object-fit: cover;
+    }
+    @media screen and (min-width: 992px) {
+        height: auto;
+    }
+}

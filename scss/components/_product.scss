@@ -1,0 +1,47 @@
+.product{
+    .product__card{
+        border-radius: .5rem;
+        overflow: hidden;
+    }
+    .product__sizes{
+        gap: .35rem;
+        &.active{
+            border-color: $primary;
+        }
+    }
+    .product__count{        
+        .btn-group{
+            border: 1px solid $muted;
+            border-radius: 2rem;
+            overflow: hidden;
+            .btn{
+                &:focus{
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+    .btn-wishlist,
+    .btn-compare,
+    .badge-offer{
+        z-index: 1;
+    }
+    .badge-offer{
+        top: 15px;
+        left: 20px;
+    }
+    .btn-wishlist{
+        top: 15px;
+        right: 20px;
+    }
+    .btn-compare{
+        bottom: 20px;
+        right: 20px;
+    }
+}
+.load-more{
+    font-size: .75rem;
+    @media screen and (min-width: 992px) {
+        font-size: 1rem;
+    }
+}

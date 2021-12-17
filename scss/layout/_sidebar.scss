@@ -1,0 +1,42 @@
+.sidebar-left{
+    .filter-sidebar{
+        border: 1px solid $muted;
+        overflow: hidden;
+        border-radius: 1rem;
+        .accordion-item{
+            border-left: transparent;
+            border-right: transparent;
+            &:last-child{
+                border-bottom: transparent;
+            }
+        }
+        .accordion-button{
+            color: $black;
+            padding-top: .75rem;
+            padding-bottom: .75rem;
+            &:focus{
+                box-shadow: none;
+            }
+            &:not(.collapsed),
+            &:not(.collapsed.custom-accordion-button){
+                box-shadow: none;
+                background-color: transparent;
+                border-bottom: 1px solid $muted;
+            }
+            &.custom-accordion-button{
+                &::after{
+                    display: none;
+                }
+            }
+        }
+        .list-item{
+            margin-bottom: .5rem;
+            a{
+                color: $black;
+                &:hover{
+                    color: darken($color: $black, $amount: 5);
+                }
+            }
+        }      
+    }
+}

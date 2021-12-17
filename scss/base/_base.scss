@@ -1,0 +1,35 @@
+body {
+    //background-color: $primary;
+   // color: $white;
+    text-rendering: optimizeLegibility;
+}
+
+// Bootstrap override
+.text-primary{
+    color: $primary !important;
+}
+.bg-primary{
+    background-color: $primary !important;
+}
+.bg-secondary{
+    background-color: $secondary !important;
+}
+.bg-info{
+    background-color: $secondary;
+}
+.btn-primary{
+    background-color: $primary;
+    color: $white;
+    border-color: $primary;
+    &:hover,
+    &:focus{
+        background-color: darken($color: $primary, $amount: 5);
+    }
+}
+.btn-outline-primary{
+    border-color: $primary;
+    color: $black;
+    &:hover{
+        background-color: $primary;
+    }
+}

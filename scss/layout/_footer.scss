@@ -1,0 +1,56 @@
+.footer{
+    .footer-widgets{
+        .title{
+            font-size: 1.1rem;
+        }
+        .footer-address {
+            a{
+                text-decoration: none;
+                color: lighten($color: $black, $amount: 15);
+                font-size: .875rem;
+            }
+        }
+        .navbar{
+            .nav-link{
+                color: lighten($color: $black, $amount: 15);
+                padding-top: 0;
+                padding-bottom: .35rem;
+                &:hover{
+                    color: $black;
+                }
+            }
+        }
+        .accordion-flush{
+            .accordion-body{
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+            .accordion-button{
+                &::after{                    
+                    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjQiIGhlaWdodD0iMjQiCnZpZXdCb3g9IjAgMCAyNCAyNCIKc3R5bGU9IiBmaWxsOiMwMDAwMDA7Ij48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0gMTEgMiBMIDExIDExIEwgMiAxMSBMIDIgMTMgTCAxMSAxMyBMIDExIDIyIEwgMTMgMjIgTCAxMyAxMyBMIDIyIDEzIEwgMjIgMTEgTCAxMyAxMSBMIDEzIDIgWiI+PC9wYXRoPjwvc3ZnPg==');
+                }
+                &:not(.collapsed)::after{
+                    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAJUlEQVRIiWNgGAWjYBSMAoKAEY3/n9rmMlHJwFEwCkbBKKAEAAD0EQEED0po+gAAAABJRU5ErkJggg==");
+                }
+                &:focus{
+                    box-shadow: none;
+                    border-color: $muted;
+                }
+                &:not(.collapsed){
+                    background-color: transparent;
+                    color: $black;
+                }            
+            }
+        }        
+    }
+    .copyright{
+        color: lighten($color: $black, $amount: 15);
+        a{
+            text-decoration: none;
+            color: lighten($color: $black, $amount: 15);
+            &:hover{
+                color: $black;
+            }
+        }
+    }
+}

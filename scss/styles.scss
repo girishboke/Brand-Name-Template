@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+// Base Partials
+@import
+  'base/reset',  
+  'base/typography',
+  'base/variables',
+  'base/base';
+
+// Components
+@import
+    'layout/header',
+    'layout/footer',
+    'layout/sidebar';
+
+// Components
+@import
+    'components/navigation',
+    'components/breadcrumb',
+    'components/product',
+    'components/newsletter',
+    'components/sliders';

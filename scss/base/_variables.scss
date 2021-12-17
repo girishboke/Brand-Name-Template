@@ -1,0 +1,49 @@
+$primary: #214669 !default;
+$secondary: #79D6D2 !default;
+$white: #FFFFFF !default;
+$black: #333333 !default;
+$muted: #dee2e6 !default;
+
+// Body variables
+$body-bg:       $white !default;
+$body-color:    $black !default;
+$link-color:    $secondary;
+$link-hover:    darken($secondary, 20%);
+
+$paragraph-margin-bottom: 1rem;
+
+$border-radius: .3rem;
+$border-radius-sm: .2rem;
+$border-radius-md: .5rem;
+$border-radius-lg: 1rem;
+$border-radius-full: 50rem;
+
+// Font families
+$font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-base: $font-family-sans-serif;
+
+/**
+ * Typography
+ */
+$font-size-tiny: 0.75rem;
+$font-size-small: 0.875rem;
+$font-size-medium: 1rem;
+$font-size-large: 1.25rem;
+$font-size-huge: 1.5rem;
+$font-size-monster: 1.75rem;
+
+// Font weights and Line Height
+$font-lighter:         lighter !default;
+$font-light:           300 !default;
+$font-normal:          400 !default;
+$font-bold:            700 !default;
+$font-bolder:          bolder !default;
+
+$line-height-base:     1.5 !default;
+$line-height-sm:       1.25 !default;
+$line-height-lg:       2 !default;
+
+//
+// Z-index
+//
+$z-index:        1000 !default;

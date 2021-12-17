@@ -1,0 +1,15 @@
+.breadcrumb{    
+    .breadcrumb-item{
+        font-size: .75rem;
+        @media screen and (min-width: 992px) {
+            font-size: 1rem;
+        }
+        a{
+            text-decoration: none;
+            color: darken($muted, 35);
+        }
+        &.active{
+            color: $black;
+        }
+    }
+}

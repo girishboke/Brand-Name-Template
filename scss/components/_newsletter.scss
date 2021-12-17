@@ -1,0 +1,16 @@
+.newsletter{
+    .form-control{
+        padding: 1rem;
+        ::placeholder{
+            font-style: italic;
+            font-size: .5rem;
+        }
+    }
+    .newsletter__submit{
+        transform: translateX(-1.5rem);
+        z-index: 4;
+        @media screen and (min-width: 992px) {
+            transform: translateX(-2.5rem);
+        }
+    }
+}
